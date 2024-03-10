@@ -7,6 +7,7 @@ import io.cucumber.java.en.When;
 import pageObjects.ProductListingPage;
 import utils.TestContextSetup;
 
+//This is the PLP page step definition class
 public class ProductListingPageStepDefinition {
 	
 public WebDriver driver;
@@ -23,7 +24,7 @@ public ProductListingPageStepDefinition(TestContextSetup testContextSetup)
 	public void check_plp_product_name(String title) {
 		testContextSetup.plpProductName = plpPage.getProductName();
 		System.out.println("The product name on PLP is " + testContextSetup.plpProductName);
-		Assert.assertTrue(testContextSetup.plpProductName.contains(title));
+		Assert.assertTrue(testContextSetup.plpProductName.contains(title), "");
 		System.out.println("The product is a " + title + " item");
 	}
 	

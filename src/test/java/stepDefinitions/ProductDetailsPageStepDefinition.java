@@ -7,6 +7,7 @@ import io.cucumber.java.en.When;
 import pageObjects.ProductDetailsPage;
 import utils.TestContextSetup;
 
+//This is the PDP page step definition class
 public class ProductDetailsPageStepDefinition {
 	
 public WebDriver driver;

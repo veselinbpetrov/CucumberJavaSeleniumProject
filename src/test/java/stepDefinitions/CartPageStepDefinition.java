@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import pageObjects.CartPage;
 import utils.TestContextSetup;
 
+//This is the Cart page step definition class
 public class CartPageStepDefinition {
 	
 public WebDriver driver;

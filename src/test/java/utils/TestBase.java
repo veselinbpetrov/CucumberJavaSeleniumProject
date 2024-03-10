@@ -3,10 +3,12 @@ package utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+// This is a Test Base class
 public class TestBase {
 
 	public WebDriver driver;
 	
+	// Initializing a new driver session
 	public WebDriver WebDriverManager()
 	{
 		if(driver== null)

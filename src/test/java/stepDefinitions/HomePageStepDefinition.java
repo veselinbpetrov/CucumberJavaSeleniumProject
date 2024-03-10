@@ -6,6 +6,7 @@ import io.cucumber.java.en.When;
 import pageObjects.HomePage;
 import utils.TestContextSetup;
 
+// This is the Home page step definition class
 public class HomePageStepDefinition {
 	
 public WebDriver driver;
@@ -21,6 +22,7 @@ public HomePageStepDefinition(TestContextSetup testContextSetup)
 	@Given("User is on the eBay {string} page")
 	public void check_home_page(String pageUrl) {
 		testContextSetup.genericUtils.checkPageUrl(pageUrl);
+		testContextSetup.genericUtils.checkPageLoaded();
 	}
 	
 	@When("User selects the category {string} from the drop-down")
